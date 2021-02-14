@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+:root[color-theme='light'] {
+    --background: #eee;
+    --pageColor : #eee;
+    --fontColor : #333;
+}
+
+:root[color-theme='dark'] {
+    --background: #333;
+    --pageColor: #333;
+    --fontColor: #eee;
+}
+
+*, li, h4, input, span {
+    font-family: "Noto Sans KR", sans-serif;
+    color: var(--fontColor);
+}
+
+body {
+    overflow: hidden;
+    background: var(--background);
+    transition: background-color 1s, color 0.1s, border 0.5s;
+}
+
+.container {
+    display: flex;
+    width: 135vw;
+    height: 100vh;
+}
+
+.page {
+    height: 100vh;
+    background-color: var(--pageColor);
+    transition: background-color 1s, color 0.1s, border 0.5s;
+}
+
+.page:first-child {
+    width: 100vw;
+    text-align: right;
+}
+
+.page:last-child {
+    width: 35vw;
+}
+
+.wrap {
+    padding: 1em;
+}
+
+.chkWrap {
+    padding: 0.7em 1em 0 0;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.date {
+    font-weight: bold;
+    font-size:12px;
+}
+
+.form, #darkCtrl {
+    display: none;
+}
+
+input {
+    margin : 1em 0;
+    border:0;   
+}
+
+.darkLbl {
+    cursor: pointer;
+}
+
+.inputTodo {
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    width: 25em;
+    color: #333;
+}
+
+button {
+    background: transparent;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+}
+
+.showing {
+    display: block;
+}
+
+.greetings {
+    /* font-size : 1em; */
+    margin: 1em 0;
+}
+
+li {
+    margin-top:0.3em;
+}
+
+.far {
+    padding : 0.5em;
+}

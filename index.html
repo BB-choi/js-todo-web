@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TO DO LIST</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="page">
+                <div class="chkWrap">
+                    <input type="checkbox" class="chkBox" id="darkCtrl"/>
+                    <label for="darkCtrl" class="darkLbl"><i class="fas fa-moon"></i></label>
+                </div>
+                <div class="wrap">
+                    <div class="js-date date">
+                        <span></span>
+                    </div>
+                    <div class="js-clock clock">
+                        <h1>00:00</h1>
+                    </div>                   
+                </div>
+            </div>
+            <div class="page">
+                <div class="wrap">
+                    <form class="js-toDoForm">
+                        <input class="inputTodo" type="text" maxlength="30" placeholder="할 일을 입력 후 Enter를 누르세요 (최대 15개 입력)" />
+                    </form>
+                    <ul class="js-toDoList">
+                    </ul>
+                </div>
+            </div>
+        </div>
+         <script src="clock.js"></script>
+         <script src="todo.js"></script>
+         <script src="scroll.js"></script>
+         <script src="darkMode.js"></script>
+    </body>
+</html>
